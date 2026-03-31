@@ -1,3 +1,11 @@
+---
+agent: agent
+description: Revisão técnica integrada de toda a solução gerada — aderência à história, qualidade, segurança e consistência.
+tools:
+  - search/codebase
+  - read/readFile
+---
+
 # Prompt 05 — Revisão Técnica Integrada
 
 Leia todo o repositório.

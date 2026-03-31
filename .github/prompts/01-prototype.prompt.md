@@ -1,3 +1,12 @@
+---
+agent: agent
+description: Gera protótipos HTML/CSS/JS a partir da história de negócio para visualizar o produto antes do backend.
+tools:
+  - search/codebase
+  - read/readFile
+  - edit/editFiles
+---
+
 # Prompt 01 — Criar Protótipos Funcionais
 
 Leia:

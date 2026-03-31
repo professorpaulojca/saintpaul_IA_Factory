@@ -1,3 +1,13 @@
+---
+agent: agent
+description: Gera o backend completo em Java/Spring Boot com entidades, services, controllers, segurança e migrations Flyway.
+tools:
+  - search/codebase
+  - read/readFile
+  - edit/editFiles
+  - execute/runInTerminal
+---
+
 # Prompt 03 — Gerar Backend Java
 
 ## Leia antes de gerar

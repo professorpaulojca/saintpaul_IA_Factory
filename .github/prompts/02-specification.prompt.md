@@ -1,3 +1,12 @@
+---
+agent: agent
+description: Transforma a história de negócio em especificações, diagramas Mermaid, BPMN e modelo de domínio.
+tools:
+  - search/codebase
+  - read/readFile
+  - edit/editFiles
+---
+
 # Prompt 02 — Gerar Especificações, Diagramas e Fluxos
 
 Leia:

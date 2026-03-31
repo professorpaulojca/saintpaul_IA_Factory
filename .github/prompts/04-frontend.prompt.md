@@ -1,3 +1,13 @@
+---
+agent: agent
+description: Gera o frontend completo em React/TypeScript alinhado aos protótipos e à API do backend.
+tools:
+  - search/codebase
+  - read/readFile
+  - edit/editFiles
+  - execute/runInTerminal
+---
+
 # Prompt 04 — Gerar Frontend React
 
 ## Leia antes de gerar
