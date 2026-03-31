@@ -54,6 +54,22 @@ História → Protótipos → Especificações → Backend → Frontend → Revi
 | **04** | Cria `frontend/` com React/TypeScript/Vite | `npm install` + `npx tsc --noEmit` + `npx vitest run` |
 | **05** | Revisa coerência geral entre todos os artefatos | Relatório em `docs/review/` |
 
+### Como executar os prompts
+
+No chat do Copilot dentro do VS Code, digite `/` seguido do nome do prompt:
+
+```
+/01-prototipo-funcional          ← rode e aguarde concluir
+/02-especificacoes-e-fluxos      ← rode e aguarde concluir
+/03-backend-java                 ← rode e aguarde concluir
+/04-frontend-react               ← rode e aguarde concluir
+/05-revisao-geral                ← rode e aguarde concluir
+```
+
+Cada prompt em uma mensagem separada, **esperando o anterior terminar** antes de rodar o próximo.
+
+> **Alternativa:** no chat, clique em 📎 ou digite `#file`, selecione o `.prompt.md` desejado e envie.
+
 ---
 
 ## Estrutura do Repositório
