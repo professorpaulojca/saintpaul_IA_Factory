@@ -1,0 +1,13 @@
+node_modules/
+dist/
+build/
+.target/
+.idea/
+.vscode/
+*.iml
+*.log
+.env
+coverage/
+frontend/node_modules/
+backend/target/
+academy_pgdata/
