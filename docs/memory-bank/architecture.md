@@ -1,52 +1,19 @@
-# Architecture Memory
+# Memory Bank — Arquitetura
 
-## Premissa
+## Visão arquitetural
+A aplicação-alvo é pensada como uma solução web tradicional moderna:
 
-Nenhuma pasta de código (`backend/`, `frontend/`, `database/`) existe previamente. Elas serão criadas pela IA a partir das especificações e da stack tecnológica abaixo.
-
-## Diretrizes arquiteturais
-
-### Backend
-- Java 21
-- Spring Boot 3
-- Pacote base: `com.saintpaul.academy`
-- Arquitetura em camadas
-- REST API
-- JPA + PostgreSQL
-- Flyway
-- Spring Security com JWT
-- OpenAPI
-
-### Frontend
-- React + TypeScript + Vite
-- rotas protegidas quando necessário
-- serviços centralizados
-- componentes reutilizáveis
-
-### Diagramas
-- Mermaid para documentação rápida
-- BPMN para processos em Camunda
-- draw.io para visual formal quando necessário
-
-## Infraestrutura
-
-### Banco de dados (Docker)
-- PostgreSQL 16 via `docker-compose.yml` na raiz do projeto
-- Comando: `docker compose up -d`
-- Banco: `academy_db`
-- Credenciais: `postgres` / `postgres`
-- Porta: `5432`
-
-### Backend
-- Roda local com `mvn spring-boot:run`
-- Conecta ao PostgreSQL via Docker
-
-### Frontend
-- Roda local com `npm run dev`
+- Frontend em React + TypeScript
+- Backend em Java + Spring Boot
+- Banco relacional PostgreSQL
+- Autenticação baseada em JWT
+- Evolução de banco com Flyway
+- Documentação de API com Swagger/OpenAPI
 
 ## Princípios
-- simplicidade pragmática
-- separação de responsabilidades
-- rastreabilidade
-- segurança base
-- legibilidade
+- simplicidade primeiro;
+- clareza antes de sofisticação;
+- separação de responsabilidades;
+- forte aderência ao domínio;
+- documentação mínima útil;
+- baixo improviso.

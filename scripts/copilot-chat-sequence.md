@@ -1,59 +1,47 @@
-# Sequência Operacional da Aula
+# Sequência de Uso na Aula
 
-## 1. Mostrar a estrutura
-Explique que a IA não começa do zero, mas também não começa pelo código. Ela começa com contexto, regras, agentes e prompts de ação. As pastas `backend/`, `frontend/` e `database/` **não existem** — serão geradas nos passos seguintes.
+## Etapa 1 — Mostrar o ambiente
+Explique:
+- `input/application-story.md`
+- `docs/memory-bank/`
+- `.github/copilot-instructions.md`
+- `.github/instructions/`
+- `.github/agents/`
+- `.github/prompts/`
 
-## 2. Subir o banco
-Executar na raiz do projeto:
-```bash
-docker compose up -d
-```
+## Etapa 2 — Colar a história
+Cole a história da aplicação em `input/application-story.md`.
 
-## 3. Colar a história
-Arquivo: `input/application-story.md`
+## Etapa 3 — Prompt 01
+Peça ao Copilot para executar o conteúdo de `.github/prompts/01-prototype.prompt.md`.
 
-## 4. Rodar Prompt 01
-Arquivo: `.github/prompts/01-prototipo-funcional.prompt.md`
+### Sugestão de fala
+“Primeiro eu quero ver o sistema nascer visualmente, sem me preocupar com backend.”
 
-Objetivo: gerar protótipos HTML/CSS/JS em `docs/prototypes/`.
+## Etapa 4 — Prompt 02
+Peça ao Copilot para executar o conteúdo de `.github/prompts/02-specification.prompt.md`.
 
-## 5. Rodar Prompt 02
-Arquivo: `.github/prompts/02-especificacoes-e-fluxos.prompt.md`
+### Sugestão de fala
+“Agora eu transformo a história em engenharia: regras, entidades, fluxos e diagramas.”
 
-Objetivo: gerar especificações, Mermaid, BPMN e draw.io.
+## Etapa 5 — Prompt 03
+Peça ao Copilot para executar o conteúdo de `.github/prompts/03-backend.prompt.md`.
 
-## 6. Rodar Prompt 03
-Arquivo: `.github/prompts/03-backend-java.prompt.md`
+### Sugestão de fala
+“Agora a IA vai gerar o backend com base na especificação, não no improviso.”
 
-Objetivo: criar `backend/`, gerar todo o código Java/Spring/Postgres/Flyway/Security/Swagger, compilar e validar o build automaticamente.
+## Etapa 6 — Prompt 04
+Peça ao Copilot para executar o conteúdo de `.github/prompts/04-frontend.prompt.md`.
 
-## 7. Rodar Prompt 04
-Arquivo: `.github/prompts/04-frontend-react.prompt.md`
+### Sugestão de fala
+“Agora a interface final nasce alinhada ao protótipo e à API.”
 
-Objetivo: criar `frontend/`, gerar todo o código React/TS/Vite, instalar dependências e validar TypeScript automaticamente.
+## Etapa 7 — Prompt 05
+Peça ao Copilot para executar o conteúdo de `.github/prompts/05-review.prompt.md`.
 
-## 8. Rodar Prompt 05
-Arquivo: `.github/prompts/05-revisao-geral.prompt.md`
+### Sugestão de fala
+“Por fim, eu submeto tudo a uma revisão técnica forte.”
 
-Objetivo: revisar coerência geral e consolidar qualidade.
-
-## Resultado
-
-Ao final dos 5 prompts, você terá:
-- Protótipos visuais
-- Especificações e diagramas completos
-- Backend compilado e pronto para rodar
-- Frontend com dependências instaladas e pronto para rodar
-- Relatório de revisão
-
-Para subir a aplicação:
-```bash
-# Banco (se ainda não estiver rodando)
-docker compose up -d
-
-# Backend (em um terminal)
-cd backend && mvn spring-boot:run
-
-# Frontend (em outro terminal)
-cd frontend && npm run dev
-```
+## Fechamento
+Mensagem central:
+“A IA boa não começa no prompt. Ela começa no ambiente.”

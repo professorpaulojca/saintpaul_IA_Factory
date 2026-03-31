@@ -1,160 +1,44 @@
-# Saint Paul AI Factory
+# Academy IA Factory
 
-Repositório de engenharia assistida por IA para transformar uma **história de negócio** em uma **aplicação completa** — protótipos, especificações, diagramas, backend Java, frontend React e banco PostgreSQL.
+Ambiente de engenharia assistida por IA para transformar uma história de negócio em uma aplicação moderna,
+usando GitHub Copilot Pro, memória explícita, regras, agentes e prompts de ação.
 
-> **Filosofia:** não começar pelo código. Começar pelo contexto, regras e especificações. A IA gera tudo a partir da história.
+## Objetivo
+Demonstrar, em aula, que a qualidade do resultado de IA depende da qualidade do ambiente preparado.
 
----
+## Stack-alvo
+- Backend: Java 17+, Spring Boot, Spring Data JPA, Flyway, Spring Security, OpenAPI/Swagger
+- Frontend: React, TypeScript, Vite
+- Banco de dados: PostgreSQL
+- Processos: BPMN 2.0 para Camunda
+- Diagramas: Mermaid e draw.io
+- Assistência de IA: GitHub Copilot Pro
 
-## Pré-requisitos
+## Fluxo recomendado da aula
+1. Apresentação do problema
+2. Exibição do ambiente e explicação de cada arquivo
+3. Colagem da história em `input/application-story.md`
+4. Execução do prompt de protótipo
+5. Execução do prompt de especificação
+6. Execução do prompt de backend
+7. Execução do prompt de frontend
+8. Revisão técnica
 
-| Ferramenta | Versão mínima |
-|-----------|---------------|
-| VS Code | Última estável |
-| GitHub Copilot Pro | Ativo com extensão no VS Code |
-| Docker Desktop | Para o PostgreSQL |
-| JDK | 21 |
-| Maven | 3.9+ |
-| Node.js | 20+ |
+## Estrutura principal
+- `input/` → insumos de negócio
+- `docs/memory-bank/` → memória explícita do projeto
+- `.github/` → regras, agentes, prompts e skills do Copilot
+- `backend/` → base backend Java
+- `frontend/` → base frontend React
+- `database/` → convenções e scripts
+- `docs/diagrams/` → modelos Mermaid, BPMN e draw.io
 
----
+## Ponto-chave pedagógico
+Não começamos pedindo código.
+Primeiro preparamos contexto, regras, especificação e papéis.
+Depois pedimos implementação.
 
-## Quick Start
-
-```bash
-# 1. Clone o repositório
-git clone https://github.com/professorpaulojca/saintpaul_IA_Factory.git
-cd saintpaul_IA_Factory
-
-# 2. Suba o banco de dados
-docker compose up -d
-
-# 3. Abra no VS Code
-code .
-```
-
-4. Cole a história da aplicação em `input/application-story.md`
-5. Rode os prompts no chat do Copilot (01 a 05, em ordem)
-6. A IA cria tudo — pastas, código, dependências, build e testes
-
----
-
-## Fluxo de Geração
-
-```
-História → Protótipos → Especificações → Backend → Frontend → Revisão
-  (você)    (Prompt 01)   (Prompt 02)   (Prompt 03) (Prompt 04) (Prompt 05)
-```
-
-| Prompt | O que a IA faz | Validação automática |
-|--------|---------------|---------------------|
-| **01** | Gera protótipos HTML/CSS/JS em `docs/prototypes/` | — |
-| **02** | Gera specs, diagramas Mermaid, BPMN, draw.io | — |
-| **03** | Cria `backend/` com Java/Spring/Flyway/JWT/Swagger | `mvn clean compile` + `mvn test` |
-| **04** | Cria `frontend/` com React/TypeScript/Vite | `npm install` + `npx tsc --noEmit` + `npx vitest run` |
-| **05** | Revisa coerência geral entre todos os artefatos | Relatório em `docs/review/` |
-
-### Como executar os prompts
-
-No chat do Copilot dentro do VS Code, digite `/` seguido do nome do prompt:
-
-```
-/01-prototipo-funcional          ← rode e aguarde concluir
-/02-especificacoes-e-fluxos      ← rode e aguarde concluir
-/03-backend-java                 ← rode e aguarde concluir
-/04-frontend-react               ← rode e aguarde concluir
-/05-revisao-geral                ← rode e aguarde concluir
-```
-
-Cada prompt em uma mensagem separada, **esperando o anterior terminar** antes de rodar o próximo.
-
-> **Alternativa:** no chat, clique em 📎 ou digite `#file`, selecione o `.prompt.md` desejado e envie.
-
----
-
-## Estrutura do Repositório
-
-```
-├── .github/
-│   ├── copilot-instructions.md    # Regras gerais para o Copilot
-│   ├── agents/                    # Agentes: Architect, Specifier, Builder, Reviewer
-│   ├── instructions/              # Regras por área (backend, frontend, database, docs)
-│   ├── prompts/                   # Prompts de ação (01 a 05)
-│   └── skills/                    # Skills reutilizáveis (ex: generate-crud)
-├── docs/
-│   ├── memory-bank/               # Memória explícita do projeto
-│   ├── specs/                     # Especificações (preenchidas pelo Prompt 02)
-│   ├── architecture/              # Padrões de engenharia, segurança e testes
-│   ├── diagrams/                  # Mermaid, draw.io
-│   └── processes/                 # BPMN Camunda
-├── input/
-│   └── application-story.md       # ← PONTO DE ENTRADA: cole a história aqui
-├── scripts/
-│   ├── copilot-chat-sequence.md   # Guia operacional passo a passo
-│   └── environment-setup.md       # Pré-requisitos da máquina
-├── docker-compose.yml             # PostgreSQL 16 via Docker
-├── AGENTS.md                      # Princípios dos agentes
-└── README.md
-```
-
-### Pastas geradas pela IA (não existem inicialmente)
-
-| Pasta | Criada por | Stack |
-|-------|-----------|-------|
-| `backend/` | Prompt 03 | Java 21, Spring Boot 3, JPA, Flyway, JWT, Swagger |
-| `frontend/` | Prompt 04 | React 18+, TypeScript, Vite, React Router |
-| `database/` | Conforme necessidade | Scripts auxiliares PostgreSQL |
-| `docs/prototypes/` | Prompt 01 | HTML/CSS/JS puro |
-
----
-
-## Stack Tecnológica
-
-### Backend
-- Java 21 + Spring Boot 3
-- Spring Data JPA + PostgreSQL 16
-- Spring Security + JWT
-- Flyway (migrations versionadas)
-- OpenAPI / Swagger
-- JUnit 5 + Mockito + AssertJ (testes)
-
-### Frontend
-- React 18+ + TypeScript
-- Vite
-- React Router
-- Vitest + React Testing Library + MSW (testes)
-
-### Infraestrutura
-- Docker Compose (PostgreSQL)
-- Pacote base: `com.saintpaul.academy`
-
----
-
-## Rodar a Aplicação (após geração)
-
-```bash
-# Banco (se ainda não estiver rodando)
-docker compose up -d
-
-# Backend (terminal 1)
-cd backend && mvn spring-boot:run
-
-# Frontend (terminal 2)
-cd frontend && npm run dev
-```
-
----
-
-## Princípios
-
-- **Contexto primeiro, código depois** — tudo nasce da história
-- **Testes junto com o código** — nunca como etapa separada
-- **Segurança desde o início** — JWT, validação, tratamento de erros
-- **Rastreabilidade** — memória explícita, decisões documentadas, specs versionadas
-- **Clareza sobre sofisticação** — código legível e manutenível
-
----
-
-## Licença
-
-Uso educacional. Desenvolvido para demonstração em aula na Saint Paul Escola de Negócios.
+## Observações
+- Todos os arquivos estão salvos em UTF-8.
+- O ambiente foi escrito em português do Brasil.
+- O conteúdo foi preparado para ser didático, profissional e reaproveitável.

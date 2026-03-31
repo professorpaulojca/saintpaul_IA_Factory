@@ -1,29 +1,28 @@
-# Product Memory
+# Memory Bank — Produto
 
-## Propósito deste repositório
+## Objetivo
+Este ambiente existe para demonstrar como preparar um contexto forte para IA antes de pedir implementação.
 
-Demonstrar uma abordagem sênior de uso de IA para engenharia de software, na qual a história do negócio é o ponto de partida para a geração de uma aplicação moderna.
-
-## Premissa principal
-
-Não começar pelo código.
-
-Começar por:
-- história
-- memória
-- regras
-- especificações
-- fluxos
-- agentes especializados
-
-As pastas de implementação (`backend/`, `frontend/`, `database/`) **não existem previamente**. Elas são criadas pela IA durante a execução dos prompts, a partir das especificações e da stack tecnológica definida.
+## Ideia central
+A IA não deve improvisar a aplicação a partir de um prompt solto.
+Ela deve trabalhar apoiada em:
+- história de negócio;
+- memória explícita;
+- regras do projeto;
+- agentes especializados;
+- prompts de ação em sequência.
 
 ## Resultado esperado
+A partir da história da aplicação, a IA deve ser capaz de gerar:
+- protótipos;
+- especificações;
+- diagramas;
+- backend;
+- frontend;
+- base de banco;
+- documentação suficiente para continuidade.
 
-A IA deve ser capaz de transformar uma história consistente em:
-- protótipo funcional
-- especificação formal
-- fluxos técnicos e de negócio
-- backend Java (criado pelo Prompt 03)
-- frontend React (criado pelo Prompt 04)
-- banco PostgreSQL (migrations criadas junto ao backend)
+## Público-alvo
+- alunos em formação;
+- desenvolvedores iniciando com IA aplicada à engenharia;
+- times que desejam reduzir improviso e aumentar consistência.

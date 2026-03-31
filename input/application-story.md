@@ -1,43 +1,42 @@
 # História da Aplicação
 
-Cole aqui a história completa da aplicação que deverá ser transformada em produto.
+> Cole aqui a história da aplicação que a IA deverá transformar em uma solução moderna.
 
-## Orientações para escrever uma boa história
+## Como escrever a história
+Descreva:
+- o contexto do negócio;
+- os problemas atuais;
+- quem usará o sistema;
+- as principais funcionalidades;
+- as regras de negócio;
+- os fluxos mais importantes;
+- o que seria considerado sucesso.
 
-Inclua, sempre que possível:
+## Exemplo de estrutura sugerida
+### 1. Contexto
+Explique o cenário atual da empresa ou operação.
 
-1. Contexto do negócio
-2. Problemas atuais
-3. Objetivo do sistema
-4. Perfis de usuários
-5. Principais funcionalidades
-6. Regras de negócio
-7. Dores operacionais
-8. Restrições técnicas ou organizacionais
-9. Ideias futuras
+### 2. Problemas
+Liste os principais problemas, dores, desperdícios, retrabalho, erros e limitações.
 
-## Modelo sugerido
+### 3. Objetivo
+Descreva o que o sistema precisa resolver.
 
-### Contexto Geral
-Descreva a empresa, operação e cenário atual.
+### 4. Usuários
+Liste os perfis que usarão o sistema e o que cada um precisa fazer.
 
-### Problemas Atuais
-Liste as dores, falhas e ineficiências.
+### 5. Funcionalidades
+Descreva as funcionalidades esperadas.
 
-### Objetivo do Sistema
-Explique o que o novo sistema deve resolver.
+### 6. Regras de Negócio
+Liste as regras que o sistema precisa respeitar.
 
-### Usuários do Sistema
-Exemplo: administrador, operador, cliente, professor, atendente.
+### 7. Fluxos
+Descreva os fluxos principais do processo.
 
-### Funcionalidades
-Liste o que o sistema deve fazer.
+### 8. Evoluções Futuras
+Liste extensões desejáveis, caso existam.
 
-### Regras de Negócio
-Liste restrições, validações e condições obrigatórias.
-
-### Perguntas Operacionais
-Liste dúvidas importantes sobre uso, infraestrutura e operação.
-
-### Visão de Crescimento
-Liste ideias futuras ou expansão.
+## Instrução para a IA
+Ao ler este arquivo, a IA deve tratá-lo como fonte primária de contexto do negócio.
+Em caso de ambiguidade, a IA deve registrar dúvidas, propor interpretações razoáveis e destacar premissas assumidas.

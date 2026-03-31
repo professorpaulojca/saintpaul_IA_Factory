@@ -1,0 +1,18 @@
+erDiagram
+    USER {
+        bigint id
+        string username
+        string password_hash
+        string role
+        datetime created_at
+    }
+
+    BUSINESS_ENTITY {
+        bigint id
+        string name
+        string status
+        datetime created_at
+        datetime updated_at
+    }
+
+    USER ||--o{ BUSINESS_ENTITY : manages

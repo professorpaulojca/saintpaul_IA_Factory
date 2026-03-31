@@ -1,12 +1,10 @@
-# Business Rules Memory
+# Memory Bank — Regras Gerais de Negócio do Ambiente
 
-## Regras transversais do ambiente
-
-1. Toda funcionalidade deve nascer de uma história ou especificação.
-2. Toda implementação deve ser rastreável até um requisito.
-3. Segurança base não é opcional.
-4. Logs e tratamento de erros devem existir desde o início.
-5. Diagramas e fluxos devem refletir o comportamento real do sistema.
-6. Banco de dados deve proteger integridade por constraints.
-7. O frontend não substitui validações do backend.
-8. A documentação é parte do produto.
+## Regras
+1. Toda solução nasce de uma história de negócio.
+2. A história precisa ser transformada em especificação antes da implementação completa.
+3. Todo artefato gerado deve ser coerente com a história original.
+4. O ambiente deve permitir revisão técnica forte.
+5. Segurança, logs e rastreabilidade devem aparecer desde o início.
+6. A solução deve evitar sobreengenharia.
+7. O ambiente deve ser didático, mas não amador.

@@ -1,23 +1,27 @@
 ---
-applyTo: "database/**,backend/src/main/resources/db/migration/**"
+applyTo: "database/**"
 ---
 
-# Database Instructions
+# Instruções para Banco de Dados
 
-## Banco padrão
+## Banco-alvo
+PostgreSQL
 
-- PostgreSQL 16
+## Diretrizes
+- Modelagem relacional clara.
+- Chaves primárias simples, preferencialmente `bigserial` ou `uuid` conforme contexto.
+- Chaves estrangeiras explícitas.
+- Índices para campos de busca, autenticação e relacionamentos críticos.
+- Uso de Flyway como mecanismo oficial de evolução.
+- Scripts devem ser legíveis, reversíveis quando possível e bem nomeados.
 
-## Regras obrigatórias
+## Convenções
+- Tabelas em `snake_case`
+- Colunas em `snake_case`
+- Chaves estrangeiras com sufixo `_id`
+- Timestamps de auditoria sempre que fizer sentido: `created_at`, `updated_at`
 
-- Nomear tabelas e colunas de forma consistente.
-- Incluir chaves primárias, estrangeiras e índices relevantes.
-- Evitar modelagem ambígua.
-- Declarar constraints para proteger integridade.
-- Versionar mudanças por Flyway.
-
-## Boas práticas
-
-- Usar campos `created_at` e `updated_at` quando a entidade justificar rastreabilidade.
-- Separar tabela transacional de tabela histórica quando houver trilha de evolução.
-- Criar scripts claros e auditáveis.
+## Qualidade
+- Evitar ambiguidade em nomes.
+- Garantir aderência com entidades JPA.
+- Evitar sobreengenharia.

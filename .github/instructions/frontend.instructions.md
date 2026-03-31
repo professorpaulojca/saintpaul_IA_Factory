@@ -2,43 +2,36 @@
 applyTo: "frontend/**"
 ---
 
-# Frontend Instructions
+# Instruções para Frontend
 
-## Stack mandatória
-
+## Stack obrigatória
 - React
 - TypeScript
 - Vite
 - React Router
-- CSS modular ou estrutura simples com arquivos separados
+- Context API ou solução simples equivalente
+- Consumo de API REST
 
-## Padrões obrigatórios
+## Diretrizes
+- Interface clara e direta.
+- Componentes pequenos e reutilizáveis.
+- Separar componentes, páginas, serviços, hooks e tipos.
+- Evitar lógica de negócio pesada na interface.
+- Criar serviços de API centralizados.
+- Tratar erros de forma visível e elegante.
+- Preparar autenticação com controle de sessão.
+- Priorizar acessibilidade, clareza e responsividade básica.
 
-- Separar páginas, componentes, serviços, hooks e tipos.
-- Centralizar chamadas HTTP em `src/services`.
-- Implementar tratamento de loading, erro e estado vazio quando aplicável.
-- Evitar lógica de negócio complexa dentro de componentes visuais.
-- Preferir componentes pequenos, claros e reutilizáveis.
-
-## Segurança e sessão
-
-- Respeitar autenticação e autorização baseadas na especificação.
-- Manter token e sessão com cuidado.
-- Proteger rotas privadas.
-- Nunca confiar apenas no frontend para validação.
+## Convenções
+- `pages/` para páginas
+- `components/` para componentes reaproveitáveis
+- `services/` para chamadas HTTP
+- `types/` para contratos TypeScript
+- `hooks/` para lógica reutilizável
+- `layouts/` para estrutura visual
+- `routes/` para roteamento
 
 ## UX
-
-- Interface simples, profissional e operacional.
-- Priorizar clareza de fluxo.
-- Foco em produtividade do usuário operacional.
-
-## Testes unitários
-
-- Stack: Vitest + React Testing Library + MSW.
-- Obrigatório para: hooks customizados, serviços de API, componentes com lógica.
-- Testar pelo comportamento do usuário, não pela implementação.
-- Queries por acessibilidade (`getByRole`, `getByLabelText`, `getByText`).
-- Interações via `userEvent`.
-- Testes são gerados junto com o código, nunca como etapa separada.
-- Consultar `docs/architecture/testing-standards.md` para detalhes completos.
+- Dar feedback de carregamento.
+- Mostrar mensagens claras de sucesso e erro.
+- Respeitar protótipos e especificações geradas anteriormente.

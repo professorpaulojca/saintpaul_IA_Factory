@@ -2,51 +2,47 @@
 applyTo: "backend/**"
 ---
 
-# Backend Instructions
+# Instruções para Backend
 
-## Stack mandatória
-
-- Java 21
-- Spring Boot 3.x
+## Stack obrigatória
+- Java 17+
+- Spring Boot
 - Spring Web
 - Spring Data JPA
-- Spring Validation
 - Spring Security
-- JWT
 - Flyway
 - PostgreSQL
-- springdoc-openapi
+- OpenAPI / Swagger
 
-## Padrões obrigatórios
+## Diretrizes
+- Usar arquitetura em camadas.
+- Não misturar regra de negócio com camada HTTP.
+- Preferir DTOs para entrada e saída.
+- Validar entradas com Bean Validation.
+- Criar tratamento global de exceções.
+- Usar logs estruturados com contexto.
+- Preparar código para testes unitários e de integração.
+- Manter controllers finos e services claros.
+- Repositories devem ser simples e focados em persistência.
+- Entidades devem refletir o domínio e o banco relacional.
 
-- Arquitetura em camadas: controller, service, repository, domain, dto, config, security.
-- Controllers finos.
-- Regras de negócio nos services.
-- Repositories somente para acesso a dados.
-- DTOs para entrada e saída.
-- Tratamento centralizado de exceções.
-- Logs estruturados.
-- Versionamento de banco via Flyway.
+## Convenções
+- `controller` para endpoints
+- `service` para orquestração de negócio
+- `repository` para persistência
+- `domain` para entidades e enums
+- `dto` para contratos
+- `config` para configuração
+- `exception` para erros
+- `security` para autenticação e autorização
 
 ## Segurança
+- Preparar autenticação baseada em JWT.
+- Definir perfis e papéis com clareza.
+- Proteger endpoints privados.
+- Evitar exposição de dados sensíveis.
 
-- Basear autorização em perfis/roles.
-- Nunca expor dados sensíveis sem necessidade.
-- Sempre prever autenticação JWT quando a história mencionar acesso autenticado.
-- Adotar endpoints públicos apenas quando houver justificativa.
-
-## Observabilidade
-
-- Adicionar logs em pontos relevantes de operação.
-- Usar correlation id quando fizer sentido.
-- Documentar endpoints via OpenAPI.
-
-## Testes unitários
-
-- Stack: JUnit 5 + Mockito + AssertJ.
-- Obrigatório para: services, controllers e security.
-- Padrão Given-When-Then.
-- Nomes descritivos: `should_[resultado]_when_[condição]`.
-- Testes negativos obrigatórios (entrada inválida, entidade não encontrada, permissão negada).
-- Testes são gerados junto com o código, nunca como etapa separada.
-- Consultar `docs/architecture/testing-standards.md` para detalhes completos.
+## Banco
+- Toda mudança estrutural deve gerar migration Flyway.
+- Garantir integridade relacional.
+- Respeitar nomenclatura consistente.

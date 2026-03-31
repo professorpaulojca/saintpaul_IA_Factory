@@ -1,30 +1,13 @@
-# Non-Functional Requirements
+# Requisitos Não Funcionais
 
-## Segurança
-- autenticação quando aplicável
-- autorização por perfil quando aplicável
-- validação de entrada
-- tratamento de erro sem exposição indevida
+## Diretrizes-base
+- segurança por autenticação e autorização;
+- logs estruturados;
+- API documentada;
+- banco versionado;
+- interface responsiva básica;
+- nomes claros e consistentes;
+- possibilidade de evolução.
 
-## Qualidade
-- código legível
-- modularização adequada
-- baixo acoplamento
-- documentação mínima de execução
-- testes unitários obrigatórios para regras de negócio, contratos HTTP e autenticação
-- testes gerados junto com o código, nunca como etapa posterior
-
-## Observabilidade
-- logs em pontos críticos
-- mensagens claras de falha
-- rastreabilidade de operações importantes
-
-## Performance
-- modelagem adequada de banco
-- endpoints claros
-- evitar complexidade desnecessária em aplicação pequena
-
-## Usabilidade
-- foco em fluxo operacional
-- linguagem simples na interface
-- consistência visual mínima
+## Instrução
+A IA deve refinar este documento com base no domínio descrito na história.

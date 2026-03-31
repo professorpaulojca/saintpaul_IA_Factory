@@ -1,11 +1,19 @@
 ---
-applyTo: "docs/**,input/**"
+applyTo: "docs/**"
 ---
 
-# Documentation Instructions
+# Instruções para Documentação
 
-- Escrever de forma didática, objetiva e senior.
-- Sempre distinguir contexto, decisão e impacto.
-- Estruturar conteúdo com clareza.
-- Evitar jargão gratuito.
-- Ao criar diagramas, garantir coerência com a história e com a especificação.
+## Diretrizes
+- Escrever em português do Brasil.
+- Usar linguagem técnica, porém didática.
+- Explicar contexto, decisão, impacto e próximo passo.
+- Evitar jargão desnecessário.
+- Sempre conectar documento ao objetivo do projeto.
+
+## Estrutura preferida
+- Objetivo
+- Contexto
+- Conteúdo principal
+- Riscos / observações
+- Próximos passos

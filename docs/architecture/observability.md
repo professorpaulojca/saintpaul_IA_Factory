@@ -1,11 +1,11 @@
-# Observability Guidance
+# Observabilidade
 
-## O que logar
-- autenticação e falhas relevantes
-- operações críticas
-- erros de negócio importantes
-- eventos de integração, se houver
+## Objetivo
+Permitir que a aplicação seja monitorável e auditável desde cedo.
 
-## O que evitar
-- dados sensíveis em log
-- verbosidade inútil
+## Diretrizes
+- logs estruturados;
+- correlação mínima por requisição, quando viável;
+- mensagens de erro compreensíveis;
+- logar eventos importantes do domínio e da segurança;
+- diferenciar erro técnico de erro de negócio.
