@@ -1,42 +1,18 @@
-# História da Aplicação
 
-> Cole aqui a história da aplicação que a IA deverá transformar em uma solução moderna.
+A Sant Paul Performance Lab é uma academia voltada para treinamento físico de alto rendimento. Possui equipamentos modernos, ambiente sofisticado e profissionais qualificados. À primeira vista, tudo indica um alto nível de organização e excelência. No entanto, por trás dessa estrutura, existem falhas operacionais importantes que ainda não foram resolvidas e que começam a impactar diretamente a segurança dos alunos e a qualidade do serviço prestado.
 
-## Como escrever a história
-Descreva:
-- o contexto do negócio;
-- os problemas atuais;
-- quem usará o sistema;
-- as principais funcionalidades;
-- as regras de negócio;
-- os fluxos mais importantes;
-- o que seria considerado sucesso.
+João, um aluno de 32 anos, frequenta a academia há aproximadamente seis meses. Ele é disciplinado, segue os treinos com rigor e confia plenamente na equipe. Há cerca de três semanas, João teve uma lesão leve no joelho direito. Não foi algo grave, mas recebeu orientação para evitar cargas excessivas por um período. Essa informação, no entanto, não foi registrada de forma estruturada em nenhum sistema acessível. Ficou restrita a uma conversa informal com um dos professores.
 
-## Exemplo de estrutura sugerida
-### 1. Contexto
-Explique o cenário atual da empresa ou operação.
+Em uma manhã comum, João chega para treinar. O professor que normalmente o acompanha não está presente naquele dia. Em seu lugar está Rafael, outro profissional experiente, porém sem conhecimento prévio do histórico de João. Ao iniciar o atendimento, Rafael pergunta qual treino João deve executar. João responde que acredita ser treino de perna, mas não tem certeza. Não há nenhum sistema centralizado onde Rafael possa consultar rapidamente o histórico do aluno, suas restrições ou o planejamento atual.
 
-### 2. Problemas
-Liste os principais problemas, dores, desperdícios, retrabalho, erros e limitações.
+Rafael tenta buscar informações de forma improvisada. Ele verifica mensagens antigas, tenta contato com outros professores e consulta anotações informais. Nenhuma dessas fontes é confiável ou atualizada. Diante disso, decide montar um treino baseado em suposições, optando por não deixar o aluno sem atividade. Ele inclui exercícios de membros inferiores com progressão de carga, seguindo um padrão comum de treinamento.
 
-### 3. Objetivo
-Descreva o que o sistema precisa resolver.
+Durante a execução, João inicia bem, mas ao avançar nas séries começa a sentir desconforto. Em uma das repetições, a dor no joelho retorna de forma mais intensa, levando à interrupção imediata do treino. Rafael percebe o problema, mas naquele momento entende que não tinha acesso à informação crítica sobre a limitação do aluno. A falha não foi técnica, mas sim estrutural.
 
-### 4. Usuários
-Liste os perfis que usarão o sistema e o que cada um precisa fazer.
+Esse episódio não é isolado. Ele evidencia um padrão recorrente dentro da academia. Os treinos não são devidamente registrados em um sistema unificado, o histórico dos alunos não é facilmente acessível, e as decisões dos professores dependem frequentemente de memória, comunicação informal ou interpretações individuais. Isso gera inconsistência no atendimento, risco de lesões e dificuldade em acompanhar a evolução dos alunos de forma precisa.
 
-### 5. Funcionalidades
-Descreva as funcionalidades esperadas.
+Além dos problemas operacionais relacionados ao treino, a academia também enfrenta desafios na gestão administrativa. Não há um controle rigoroso sobre os planos contratados, existindo casos de alunos treinando com pagamentos em atraso. As promoções e estratégias comerciais são definidas sem base em dados concretos, e não há indicadores claros que permitam avaliar desempenho financeiro, retenção de alunos ou efetividade dos treinos aplicados.
 
-### 6. Regras de Negócio
-Liste as regras que o sistema precisa respeitar.
+Apesar da aparência de organização, a academia opera com baixa maturidade em termos de gestão de informação. Existe um desalinhamento entre a proposta de alto rendimento e a ausência de controle sistêmico. A continuidade desse modelo tende a limitar o crescimento do negócio, aumentar riscos operacionais e comprometer a confiança dos alunos.
 
-### 7. Fluxos
-Descreva os fluxos principais do processo.
-
-### 8. Evoluções Futuras
-Liste extensões desejáveis, caso existam.
-
-## Instrução para a IA
-Ao ler este arquivo, a IA deve tratá-lo como fonte primária de contexto do negócio.
-Em caso de ambiguidade, a IA deve registrar dúvidas, propor interpretações razoáveis e destacar premissas assumidas.
+Diante desse cenário, torna-se evidente a necessidade de estruturar um sistema que centralize as informações dos alunos, registre treinos e restrições, permita o acompanhamento da evolução física, padronize a atuação dos profissionais e forneça dados para tomada de decisão. Esse sistema deve ser capaz de transformar informações dispersas em conhecimento útil, garantindo segurança, consistência e escalabilidade para a operação da academia.
